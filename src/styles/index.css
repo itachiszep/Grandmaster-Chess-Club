@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  /* Kolory */
+  --color-accent: #d4af37;
+  --color-primary: #1a1410;
+  --color-secondary: #3d2817;
+  --color-background: #0f0d0a;
+  --color-surface: #1c1712;
+  --color-surface-elevated: #2a2218;
+  --color-text: #e8e6e3;
+  --color-text-muted: #a89986;
+  --color-text-light: #7a7168;
+  --color-success: #7c9473;
+  --color-error: #c9745c;
+  --color-warning: #d4a574;
+  --color-board-dark: #8b6f47;
+  --color-board-light: #d4b896;
+  --color-border: #3a3028;
+  --color-hover: #4a3428;
+  --color-white:#fff;
+  --color-black: #000;
+  --color-orange:#F59E0B;
+  --color-orange-active:#D97706;
+  --color-red: #ef4444;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+
+}
+
+* {
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--color-accent);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  
+}
+
+a:hover {
+  color: var(--color-accent);
+  
+}
+
+button{
+  color: var(--color-white);
+  background-color: #F59E0B;
+  
+}
+
+button:hover{
+  background-color: #D97706;
+}
