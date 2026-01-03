@@ -10,15 +10,17 @@ const Navbar = ({ currentPath }) => {
     <nav className="absolute top-0 left-0 w-full z-50">
       <div className="mx-auto px-6 h-12 flex items-center justify-between">
         <div className="flex-shrink-0">
-          <h1 className="text-2xl sm:text-3xl text-[var(--color-accent)] font-bold whitespace-nowrap">
-            Grandmaster Chess Club
-          </h1>
+        <a href="/" className="cursor-pointer">
+            <h1 className="text-2xl sm:text-3xl text-[var(--color-accent)] font-bold whitespace-nowrap hover:opacity-80 transition-opacity">
+              Grandmaster Chess Club
+            </h1>
+          </a>
         </div>
         <ul className="text-xl hidden lg:flex gap-6 absolute left-1/2 transform -translate-x-1/2 flex-shrink-0">
           {links.map((link) => (
             <li key={link.href} className="whitespace-nowrap">
               <a 
-                className={`transition ${isActive(link.href) ? 'text-[var(--color-accent)] font-bold' : ''}`} 
+                className={`transition ${isActive(link.href) ? 'text-[var(--color-accent)] font-bold' : ''}`}
                 href={link.href}
               >
                 {link.name}

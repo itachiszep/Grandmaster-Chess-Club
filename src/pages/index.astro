@@ -2,8 +2,11 @@
 import Layout from '../layouts/MainLayout.astro';
 import Hero from '../components/Hero.jsx';
 import Banner from '../components/Banner.jsx'
+import Newsletter from '../components/Newsletter.jsx';
 ---
 <Layout title="Home - Grandmaster Chess Club">
+  <Newsletter showOnLoad={true} client:load />
 <Banner client:load />
+
 <Hero client:load />
 </Layout>

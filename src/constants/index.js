@@ -5,6 +5,7 @@ export const links = [
   { name: 'Home', href: '/' },
   { name: 'Historia', href: '/historia' },
   { name: 'Kontakt', href: '/kontakt' }
+  
 ];
 
 export const clubLinks = [
@@ -13,6 +14,8 @@ export const clubLinks = [
   { name: 'Turnieje', href: '/turnieje' },
   { name: 'Zajęcia', href: '/zajecia' }
 ];
+
+
 
 export const contactInfo = {
   email: 'kontakt@grandmasterchess.pl',
