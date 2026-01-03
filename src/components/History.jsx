@@ -40,9 +40,12 @@ const History = () => {
         </p>
       </div>
       <div className="align-center justify-center flex mb-16">
-        <button className=" font-bold px-8 py-3 rounded-lg transition">
-          Dołącz do nas
-        </button>
+        <button 
+          onClick={() => window.location.href = '/subskrybcja'}
+        className="font-bold px-8 py-3 rounded-lg transition bg-amber-500 hover:bg-amber-400 text-slate-900"
+        >   
+        Dołącz do nas
+      </button>
       </div>
     </div>
   );
